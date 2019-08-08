@@ -29,37 +29,49 @@ html{
     /* background-color: rgb(224, 220, 220); */
     font-weight: bold
 }
+#main_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#img_wind{
+    border: 1.5px solid rgb(7, 95, 146);
+    /* display: block */
+    border-radius: 4px;
+    padding: 5px;
+    }
 
 </style>  
     
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="climate.html">Latitude</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Plots
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="wind.html">Windspeed</a>
-                        </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comparisons</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cities_data.html">Data</a>
-                </li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="climate.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind.html">Windspeed</a>
+                    </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Comparisons</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cities_data.html">Data</a>
+            </li>
+            </ul>
+        </div>
     </nav>
         <div class="row p-3"></div> 
         <div class="row p-3"></div>
@@ -69,12 +81,13 @@ html{
             <div class="container">
                 <h1>Wind Speed</h1>
                 <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">
-                        <p style="font-size:18px; text-align: justify ; font-style: inherit">
-                            <img src="Resources/assets/images/Wind.png" alt="Cloudiness" style = "max-width: 80%"  >
-                        </p>
-                        <p style= "text-align: justify">
-                            Enter text
-                        </p>
+                    <p style="font-size:18px; text-align: justify ; font-style: inherit">
+                        <img src="Resources/assets/images/Wind.png" id="main_img" alt="Cloudiness" style = "max-width: 80%"  >
+                    </p>
+                    <p style= "text-align: justify">
+                        We do not see a major change in wind speed with respect to latitude.
+                        From this data set we can conclude that wind speed is independent of city's latitude.
+                    </p>
             </div>
         </div>           
         
@@ -82,11 +95,11 @@ html{
             <div class="container visualizations">
                 <h1> Visualizations <h1>
                 <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">  
-                        <img id="Fig1" src="Resources/assets/images/Temp.png" alt="Graph 1" style = "max-width: 48%">
-                        <img src="Resources/assets/images/Humidity.png" alt="Graph 1" style = "max-width: 48%">
-                            <br>
-                        <img src="Resources/assets/images/CLoud.png" alt="Graph 1" style = "max-width: 48%">
-                        <img src="Resources/assets/images/Wind.png" alt="Graph 1" style = "max-width: 48%">  
+                    <a target="blank" href="max_temp.html"><img src="Resources/assets/images/Temp.png" alt="Temp" style = "max-width: 48%"></a>
+                    <a target="blank" href="humidity.html"><img src="Resources/assets/images/Humidity.png" alt="Humidity" style = "max-width: 48%"></a>
+                    <br>
+                    <a target="blank" href="cloudiness.html"><img src="Resources/assets/images/CLoud.png" alt="Cloud" style = "max-width: 48%"></a>
+                    <a target="blank" href="wind.html"><img src="Resources/assets/images/Wind.png" id="img_wind" alt="Wind" style = "max-width: 48%"></a>  
             </div> 
         </div>
         </div>
