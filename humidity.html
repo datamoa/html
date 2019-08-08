@@ -29,6 +29,7 @@ html{
     /* background-color: rgb(224, 220, 220); */
     font-weight: bold
 }
+
 </style>  
     
 </head>
@@ -41,7 +42,7 @@ html{
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Plots
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -67,28 +68,27 @@ html{
        
         <div class="col-md-6">
             <div class="container">
-                <h1> Summary: Latitude vs X </h1>
+                <h1>Humidity</h1>
                 <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">
-                <br>
-                        <p style="font-size:18px; text-align: justify; font-style: inherit">
-                            <img src="Resources/assets/images/Temp.png" alt="Graph 1" style="width:300px;height:250px;" align = "left">  
-                            The purpose of the project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+                        <p style="font-size:18px; text-align: justify ; font-style: inherit">
+                            <img src="Resources/assets/images/Humidity.png" alt="Humidity" style = "max-width: 80%"  >
                         </p>
-                        <p style="font-size:18px; text-align: justify">
-                            After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. factors we looked at included:temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-                        </p> 
+                        <p style= "text-align: justify">
+                            Analysis of the humidity data shows that latitude doesn't significantly inmpact humidity percent.
+                            However,it is woth mentioning that the majority of the cities generated from the analysis had humidity percent higher than 50%.
+                        </p>
             </div>
         </div>           
         
         <div class="col-md-6">
             <div class="container visualizations">
-                <h1>Visualizations<h1>
-                <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">   
-                        <img src="Resources/assets/images/Temp.png" alt="Max Temp" style = "max-width: 48%">
-                        <img src="Resources/assets/images/Humidity.png" alt="Humidity" style = "max-width: 48%">
+                <h1> Visualizations <h1>
+                <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">  
+                        <img id="Fig1" src="Resources/assets/images/Temp.png" alt="Graph 1" style = "max-width: 48%">
+                        <img src="Resources/assets/images/Humidity.png" alt="Graph 1" style = "max-width: 48%">
                             <br>
-                        <img src="Resources/assets/images/Cloud.png" alt="Cloudiness" style = "max-width: 48%">
-                        <img src="Resources/assets/images/Wind.png" alt="Wind Speed" style = "max-width: 48%">  
+                        <img src="Resources/assets/images/Cloud.png" alt="Graph 1" style = "max-width: 48%">
+                        <img src="Resources/assets/images/Wind.png" alt="Graph 1" style = "max-width: 48%">  
             </div> 
         </div>
         </div>
