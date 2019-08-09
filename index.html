@@ -14,6 +14,7 @@
     height: 580px;
     margin: auto
 }
+
 body {
   background-color: rgb(224, 220, 220);
   width:100%;
@@ -43,7 +44,7 @@ h1{
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="climate.html">Latitude</a>
+                <a class="navbar-brand" href="index.html">Latitude</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -64,7 +65,7 @@ h1{
                         <a class="nav-link" href="comparison.html">Comparisons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cities_data.html">Data</a>
+                        <a class="nav-link" href="data.html">Data</a>
                     </li>
                     </ul>
                 </div>
@@ -74,8 +75,10 @@ h1{
         <div class="row">
                 
        
-        <div class="col-md-6">
-            <div class="container">
+        
+        <div class="visualizations">
+            <div class="row">
+                    <div class="col-md-10 container" id="first-container">
                 <h1> Summary: Latitude vs X </h1>
                 <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">
                 <br>
@@ -86,20 +89,20 @@ h1{
                         <p style="font-size:18px; text-align: justify">
                             After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. factors we looked at included:temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
                         </p> 
+                </div>
             </div>
         </div>           
         
-        <div class="col-md-6">
-            <div class="container visualizations">
-                <h1>Visualizations<h1>
-                <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">        
-                    <a target="blank" href="max_temp.html"><img src="Resources/assets/images/Temp.png"  alt="Max Temp" style = "max-width: 48%"></a>
-                    <a target="blank" href="humidity.html"><img src="Resources/assets/images/Humidity.png" alt="Humidity" style = "max-width: 48%"></a>
-                    <br>
-                    <a target="blank" href="cloudiness.html"><img src="Resources/assets/images/Cloud.png" alt="Cloudiness" style = "max-width: 48%"></a>
+                <div class="col-md-6 container">
+                    <h1>Visualizations<h1>
+                    <hr style="margin-left: auto;margin-right: auto;height: 5px;background-color:rgb(85, 182, 226); opacity: 0.1">        
+                        <a target="blank" href="max_temp.html"><img src="Resources/assets/images/Temp.png"  alt="Max Temp" style = "max-width: 48%"></a>
+                        <a target="blank" href="humidity.html"><img src="Resources/assets/images/Humidity.png" alt="Humidity" style = "max-width: 48%"></a>
+                        <br>
+                        <a target="blank" href="cloudiness.html"><img src="Resources/assets/images/Cloud.png" alt="Cloudiness" style = "max-width: 48%"></a>
                     <a target="blank" href="wind.html"><img src="Resources/assets/images/Wind.png" alt="Wind Speed" style = "max-width: 48%"></a>
-            </div> 
-        </div>
+                </div> 
+
         </div>
     <div class="row p-5"></div>
     <div class="row p-1" style="background-color: grey"></div>
